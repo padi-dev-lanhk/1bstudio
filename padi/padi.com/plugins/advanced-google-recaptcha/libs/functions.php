@@ -188,7 +188,7 @@ class WPCaptcha_Functions extends WPCaptcha
 
         $rest_url    = wp_parse_url(trailingslashit(rest_url()));
         $current_url = wp_parse_url(add_query_arg(array()));
-        $is_rest     = strpos($current_url['path'], $rest_url['path'], 0) === 0;
+        // $is_rest     = strpos($current_url['path'], $rest_url['path'], 0) === 0;
 
         return $is_rest;
     }
